@@ -1,6 +1,6 @@
-# cells-card
+# Cells' cat
 
-Cell's [GFT](https://gft.xyz) card.
+Cell's cat [GFT](https://gft.xyz) card.
 
 This is forked from the [card-template](https://github.com/sendgft/card-template).
 
