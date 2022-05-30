@@ -1,4 +1,4 @@
-# Cells' cat
+# Cell's cat card
 
 Cell's cat [GFT](https://gft.xyz) card.
 
