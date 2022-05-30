@@ -1,0 +1,89 @@
+html {
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+$bgColor: #B8B2EA;
+$contentMetaTextColor: #999;
+$contentTextColor: #333;
+$contentSpecialTextColor: #000;
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $bgColor;
+  background-image: url("./images/bg.svg");
+  background-repeat: repeat;
+}
+
+main {
+  width: 80%;
+  max-width: 400px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#logo {
+  height: 200px;
+  width: 200px;
+  background-image: url("./images/cat.svg");
+  background-size: contain;
+  margin-bottom: 10px;
+}
+
+@mixin highlightText {
+  font-weight: bolder;
+  color: $contentSpecialTextColor;
+}
+
+#content {
+  font-family: monospace;
+  background-color: white;
+  width: 100%;
+  border-radius: 10px;
+  padding: 1em;
+  color: $contentTextColor;
+
+  p {
+    margin: 0 0 1em;
+  }
+
+  .msg {
+    font-size: 120%;
+  }
+
+  .from, .to {
+    label {
+      display: block;
+      font-style: italic;
+    }
+    em {
+      word-break: break-all;
+    }
+  }
+
+  .assets {
+    margin-bottom: 1em;
+    border-bottom: 1px dashed #999;
+    padding-bottom: 1em;
+
+    label {
+      @include highlightText();
+    }
+  }
+
+  ul, li {
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .meta {
+    font-size: 90%;
+    color: $contentMetaTextColor;
+  }
+}
