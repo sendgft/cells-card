@@ -1,3 +1,4 @@
+const sharedJS = require('@sendgft/shared.js')
 const FixStyleOnlyEntriesPlugin = require("webpack-fix-style-only-entries")
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const HtmlWebpackPlugin = require('html-webpack-plugin')
@@ -56,7 +57,8 @@ module.exports = {
       inject: true,
       hash: false,
       filename: 'index.html',
-      template: 'src/index.html'
+      template: 'src/index.html',
+      urlToSharedJs: sharedJS.url,
     }),
   ]  
 }
